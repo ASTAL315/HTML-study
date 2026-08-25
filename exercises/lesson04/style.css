@@ -9,7 +9,7 @@
      body に background-color, color, font-family を設定
      img に max-width: 100% を設定（画像がはみ出さないように）
    ============================================= */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,11 +17,11 @@
 
 body {
   front-family: sans=serif;
-  background-color:black;
+  background-color: black;
   color: green;
 }
 
-img{
+img {
   max-width: 100%;
 }
 /* =============================================
@@ -42,24 +42,24 @@ img{
      .header-nav a に color と text-decoration: none を指定
      → リンクの色を変えて下線を消す
    ============================================= */
-  .header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: 16px 40px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
   background-color: #ffff;
-  }
+}
 
-  .header-nav{
-    display:flex;
-    gap:24px;
-  }
+.header-nav {
+  display: flex;
+  gap: 24px;
+}
 
-  .header-nav a{
-    color: #ccc;
-    text-decoration: none;
-    font-size: 14px;
-  }
+.header-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
 /* =============================================
    Aboutセクション
    =============================================
@@ -70,21 +70,21 @@ img{
      .about h1 に font-size を設定
      .about p に color（薄めの色）を設定
    ============================================= */
-   .about {
-    text-align:center;
-    padding: 60px 40px;
-   }
+.about {
+  text-align: center;
+  padding: 60px 40px;
+}
 
-   .about h1{
-    font-size: 36px;
-    margin-bottom: 16px;
-   }
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
 
-   .about p{
-    color: #aaa;
-    max-width: 600px;
-    margin: 0 auto;
-   }
+.about p {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
 /* =============================================
    セクション共通
    =============================================
@@ -94,16 +94,16 @@ img{
      .section に padding を設定
      .section h2 に text-align: center, font-size, margin-bottom を設定
    ============================================= */
-    .section {
-      padding: 40px;
-    }
+.section {
+  padding: 40px;
+}
 
-    .section h2{
-      text-align:center;
-      font-size: 24px;
-      margin-bottom: 24px;
-      color: #eee;
-    }
+.section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #eee;
+}
 /* =============================================
    メンバーセクション
    =============================================
@@ -123,30 +123,30 @@ img{
 
      .member p に margin-top, font-size, color を設定
    ============================================= */
-    .member-list{
-      display:flex;
-      justify-content:center;
-      gap: 24px;
-      flex-wrap:wrap;
-    }
+.member-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
 
-    .member{
-      text-align:center;
-      width: 150px;
-    }
+.member {
+  text-align: center;
+  width: 150px;
+}
 
-    .member img{
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-    .member p{
-      margin-top: 8px;
-      font-size: 14px;
-      color: #ccc;
-    }
+.member p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
 /* =============================================
    ゲームセクション
    =============================================
@@ -158,40 +158,89 @@ img{
      .game img → width, height, border-radius: 8px, object-fit: cover
      .game p → margin-top, font-size, color
    ============================================= */
-    .game-list{
-      display:flex;
-      justify-content:center;
-      gap: 24px;
-      flex-wrap:wrap;
-    }
+.game-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
 
-    .game{
-      text-align:center;
-      width: 250px;
-    }
+.game {
+  text-align: center;
+  width: 250px;
+}
 
-    .game img{
-      width: 250px;
-      height: 150px;
-      border-radius: 8px;
-      object-fit:cover;
-    }
+.game img {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
-    .game p{
-      margin-top: 8px;
-      font-size: 14px;
-      color: #ccc;
-    }
+.game p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
 /* =============================================
    お問い合わせ
    =============================================
    ヒント:
      .section p に text-align: center と color を設定
    ============================================= */
-    .section p{
-      text-align: center;
-      color: #aaa;
-    }
+.section p {
+  text-align: center;
+  color: #aaa;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: black;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
 /* =============================================
    フッター
    =============================================
@@ -199,10 +248,10 @@ img{
      .footer に text-align: center, padding, background-color を設定
      color, font-size を設定
    ============================================= */
-     .footer {
-      text-align:center;
-      padding: 20px;
-      background-color: #1a2a3a;
-      color: #888;
-      font-size: 12px;
-     }
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a2a3a;
+  color: #888;
+  font-size: 12px;
+}
